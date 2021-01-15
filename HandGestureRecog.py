@@ -46,11 +46,11 @@ def HandGestureRecognition(img):
 
         if theta <= 90:
             defect_num += 1
-            #cv2.circle(i_temp, far, 1, [0, 0, 255], -1)
-        #cv2.line(i_temp, start, end, [0, 255, 0], 2)
+            cv2.circle(i_temp, far, 1, [0, 0, 255], -1)
+        cv2.line(i_temp, start, end, [0, 255, 0], 2)
 
-    #cv2.imshow('threshold', thresh)
-    #cv2.imshow('Hulled image' , img)
+    cv2.imshow('threshold', thresh)
+    cv2.imshow('Hulled image marked with defects' , img)
     if defect_num==0:
         err = cv2.matchShapes(cnt, c_i,1,0.0 )
         if err <=1.3588:
