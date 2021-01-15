@@ -63,7 +63,8 @@ while True:
     _,frame = cap.read()
     image = frame
     cv2.rectangle(image, (50, 50), (300, 300), (0, 0, 255), 3)
-    img = frame[50:300,50:300]
+    frame_temp = frame.copy()
+    img = frame_temp[50:300,50:300]
     cd = HandGestureRecognition(img)
 
     if cd==1:
