@@ -27,4 +27,4 @@ why we need to eliminate them.
 
 The previous 3 steps are the prerequisites for finding and drawing contours and performing the related operations on the image.
 
-6. Use `cv2.findContours()` and pass the threshholded image as one of the parameters.
+6. Use `cv2.findContours()` and pass the threshold image as one of the parameters.
