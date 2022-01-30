@@ -8,7 +8,6 @@ Between two fingers, we have a gap known as _interdigital space_. Now, for knowi
 and the number of fingers will be one more than that count.
 
 ### How did I use OpenCV here?
-Using OpenCV, we can do Image Processing on the feed captured from webcam and then apply the knowledge of `Contours` on the frames captured to get the desired output.
 Contour is a curve joining all the continuous points (along the boundary), having same color or intensity. The contours are a useful tool for shape
 analysis and object detection and recognition. For getting better accuracy while using contours, use binary images. So before finding contours, apply threshold or canny edge
 detection.
